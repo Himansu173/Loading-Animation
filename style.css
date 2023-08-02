@@ -1,0 +1,259 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    animation: blinking 1.5s linear infinite;
+}
+
+#first_circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 100px;
+    box-shadow: 3px 0;
+    color: rgb(0, 255, 170);
+    border-radius: 50%;
+    animation: first 0.8s infinite;
+}
+
+#second_circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75px;
+    width: 75px;
+    box-shadow: -3px 0px;
+    color: yellow;
+    border-radius: 50%;
+    animation: second 0.8s infinite;
+}
+
+#third_circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 55px;
+    width: 55px;
+    box-shadow: 0 3px;
+    color: rgb(255, 0, 136);
+    border-radius: 50%;
+    animation: third 0.8s infinite;
+}
+
+@keyframes first {
+    6% {
+        box-shadow: 3px -1px;
+    }
+
+    12% {
+        box-shadow: 2px -2px;
+    }
+
+    18% {
+        box-shadow: 1px -3px;
+    }
+
+    25% {
+        box-shadow: 0px -3px;
+    }
+
+    31% {
+        box-shadow: -1px -3px;
+    }
+
+    37% {
+        box-shadow: -2px -2px;
+    }
+
+    43% {
+        box-shadow: -3px -1px;
+    }
+
+    50% {
+        box-shadow: -3px 0;
+    }
+
+    56% {
+        box-shadow: -3px 1px;
+    }
+
+    62% {
+        box-shadow: -2px 2px;
+    }
+
+    68% {
+        box-shadow: -1px 3px;
+    }
+
+    75% {
+        box-shadow: 0 3px;
+    }
+
+    81% {
+        box-shadow: 1px 3px;
+    }
+
+    87% {
+        box-shadow: 2px 2px;
+    }
+
+    93% {
+        box-shadow: 3px 1px;
+    }
+
+    100% {
+        box-shadow: 3px 0;
+    }
+}
+
+@keyframes second {
+    6% {
+        box-shadow: -3px -1px;
+    }
+
+    12% {
+        box-shadow: -2px -2px;
+    }
+
+    18% {
+        box-shadow: -1px -3px;
+    }
+
+    25% {
+        box-shadow: 0 -3px;
+    }
+
+    31% {
+        box-shadow: 1px -3px;
+    }
+
+    37% {
+        box-shadow: 2px -2px;
+    }
+
+    43% {
+        box-shadow: 3px -1px;
+    }
+
+    50% {
+        box-shadow: 3px 0;
+    }
+
+    56% {
+        box-shadow: 3px 1px;
+    }
+
+    62% {
+        box-shadow: 2px 2px;
+    }
+
+    68% {
+        box-shadow: 1px 3px;
+    }
+
+    75% {
+        box-shadow: 0 3px;
+    }
+
+    81% {
+        box-shadow: -1px 3px;
+    }
+
+    87% {
+        box-shadow: -2px 2px;
+    }
+
+    93% {
+        box-shadow: -3px 1px;
+    }
+
+    100% {
+        box-shadow: -3px 0;
+    }
+}
+
+@keyframes third {
+    6% {
+        box-shadow: 1px 3px;
+    }
+
+    12% {
+        box-shadow: 2px 2px;
+    }
+
+    18% {
+        box-shadow: 3px 1px;
+    }
+
+    25% {
+        box-shadow: 3px 0;
+    }
+
+    31% {
+        box-shadow: 3px -1px;
+    }
+
+    37% {
+        box-shadow: 2px -2px;
+    }
+
+    43% {
+        box-shadow: 1px -3px;
+    }
+
+    50% {
+        box-shadow: 0px -3px;
+    }
+
+    56% {
+        box-shadow: -1px -3px;
+    }
+
+    62% {
+        box-shadow: -2px -2px;
+    }
+
+    68% {
+        box-shadow: -3px -1px;
+    }
+
+    75% {
+        box-shadow: -3px 0;
+    }
+
+    81% {
+        box-shadow: -3px 1px;
+    }
+
+    87% {
+        box-shadow: -2px 2px;
+    }
+
+    93% {
+        box-shadow: -1px 3px;
+    }
+
+    100% {
+        box-shadow: 0 3px;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+       }
+       50% {
+        opacity: 0;
+       }
+       100% {
+        opacity: 1;
+       }
+}
